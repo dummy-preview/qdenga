@@ -1,9 +1,6 @@
 $(document).ready(function() {
-
     // e preload
-
     $(window).on('load', function() {
-        // $("#preloader").fadeOut(1750);
         $("#preloader").delay(3500).fadeOut("slow", function() {
             $(this).remove()
         })
@@ -31,16 +28,14 @@ $(document).ready(function() {
     function toggleBodyClass(className) {
         document.body.classList.toggle(className);
     }
-
+    // kuis animation
     $('.kuis3__select--item1 img').click(function() {
         setTimeout(function() {
             $('.kuis3__cta2').fadeIn(700);
+            $('.kuis3__cta2').fadeIn(700);
             $('.block-kuis31').fadeOut(100);
-            $('.block-kuis32').fadeIn(700);
-
         }, 3000);
         $('.kuis3__cta').fadeOut();
-        // $('#hand').get(0).play();
         $('#hand1').fadeOut(100);
         $('#hand').fadeIn(100);
         $('.kuis3__kids--hand').addClass('hand-move');
@@ -50,7 +45,11 @@ $(document).ready(function() {
             $('.kuis3__kids--hand').fadeOut();
         }, 3000);
         setTimeout(function() {
+            $('#blockhand').fadeIn(100);
+        }, 1000);
+        setTimeout(function() {
             $('.kuis3__kids--hand').fadeOut(100);
+            $('#blockhand').fadeOut(100);
         }, 3000);
         setTimeout(function() {
             $('.kuis3__kids--hand').fadeIn();
@@ -61,21 +60,23 @@ $(document).ready(function() {
         $('.block-kuis31').fadeIn(100);
         $('.kuis3__kids--hand').addClass('hand-move');
         setTimeout(function() {
+            $('#blockhand').fadeIn(100);
+        }, 1000);
+        setTimeout(function() {
             $(".kuis3__kids--hand").removeClass("hand-move");
             $('.shadowkids50').fadeOut();
             $('.shadowkids100').fadeIn(500);
+            $('#blockhand').fadeOut(100);
         }, 3000);
         setTimeout(function() {
             $('.kuis3__kids--hand').fadeOut(100);
         }, 3000);
-        // setTimeout(function() {
-        //     $('.kuis3__kids--hand').fadeIn();
-        // }, 5500);
     });
 
     $('.close').click(function() {
         $('.modal').fadeOut();
     });
+    // increment
     $("#startCount").on("click", function(evt) {
         setTimeout(function() {
             var $el = $("#el"),
@@ -176,6 +177,7 @@ $(() => {
         }
     });
 });
+// sensor text
 $('input[type="text"]').on('keydown, keyup', function() {
     var timer = 0;
     var sensor_word = ['anjing', 'kontol', 'cebong', 'kampret'];
@@ -193,7 +195,7 @@ $('input[type="text"]').on('keydown, keyup', function() {
     }, 0);
 
 });
-// 
+// slider
 const mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     slidesPerColumn: 2,
@@ -309,11 +311,7 @@ $(window).scroll(function() {
     //     }
     // });
 });
-
-
-// e parallax
-
-
+// animation lottie
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('mosquito1'),
     renderer: 'svg',
@@ -434,13 +432,27 @@ var animation = bodymovin.loadAnimation({
     path: 'images/mascot.json',
     name: 'myAnimation',
 });
-
-
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('mascot2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'images/mascot.json',
+    name: 'myAnimation',
+});
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('blockhand'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'images/blockhand.json',
+    name: 'myAnimation',
+});
+// upload and crop
 let result = document.querySelector('.result'),
     img_result = document.querySelector('.img-result'),
     img_w = "300",
     img_h = document.querySelector('.img-h'),
-    // options = document.querySelector('.options'),
     save = document.querySelector('.save'),
     cropped = document.querySelector('.cropped'),
     dwn = document.querySelector('.download'),
@@ -465,7 +477,6 @@ upload.addEventListener('change', e => {
     }
 });
 
-
 save.addEventListener('click', e => {
     e.preventDefault();
     let imgSrc = cropper.getCroppedCanvas({
@@ -476,7 +487,10 @@ save.addEventListener('click', e => {
     dwn.classList.remove('hide');
     $('.download').fadeIn();
     cropped.src = imgSrc;
-    // dwn.classList.remove('hide');
-    // dwn.download = 'imagename.png';
-    // dwn.setAttribute('href', imgSrc);
 });
+// change frame
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = imgs.src;
+    expandImg.parentElement.style.display = "block";
+}
