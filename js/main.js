@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+    // e preload
+
+    $(window).on('load', function() {
+        // $("#preloader").fadeOut(1750);
+        $("#preloader").delay(3500).fadeOut("slow", function() {
+            $(this).remove()
+        })
+    });
     $("#menu-toggler").click(function() {
         toggleBodyClass("menu-active");
     });
@@ -59,9 +68,9 @@ $(document).ready(function() {
         setTimeout(function() {
             $('.kuis3__kids--hand').fadeOut(100);
         }, 3000);
-        setTimeout(function() {
-            $('.kuis3__kids--hand').fadeIn();
-        }, 5500);
+        // setTimeout(function() {
+        //     $('.kuis3__kids--hand').fadeIn();
+        // }, 5500);
     });
 
     $('.close').click(function() {
@@ -73,7 +82,7 @@ $(document).ready(function() {
                 value = 50;
             evt.preventDefault();
             $({ percentage: 0 }).stop(true).animate({ percentage: value }, {
-                duration: 5000,
+                duration: 2000,
                 easing: "easeOutExpo",
                 step: function() {
                     var percentageVal = Math.round(this.percentage * 10) / 10;
@@ -90,7 +99,7 @@ $(document).ready(function() {
                 value = 100;
             evt.preventDefault();
             $({ percentage: 50 }).stop(true).animate({ percentage: value }, {
-                duration: 3000,
+                duration: 2000,
                 easing: "easeOutExpo",
                 step: function() {
                     var percentageVal2 = Math.round(this.percentage * 10) / 10;
