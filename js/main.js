@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // e preload
     $(window).on('load', function() {
-        $("#preloader").delay(3500).fadeOut("slow", function() {
+        $("#preloader").delay().fadeOut("slow", function() {
             $(this).remove()
         })
     });
@@ -34,23 +34,25 @@ $(document).ready(function() {
             $('.kuis3__cta2').fadeIn(700);
             $('.kuis3__cta2').fadeIn(700);
             $('.block-kuis31').fadeOut(100);
+            $('.block-kuis32').fadeIn(100);
         }, 3000);
         $('.kuis3__cta').fadeOut();
         $('#hand1').fadeOut(100);
         $('#hand').fadeIn(100);
         $('.kuis3__kids--hand').addClass('hand-move');
         setTimeout(function() {
-            $(".kuis3__kids--hand").removeClass("hand-move");
             $('.shadowkids50').fadeIn();
             $('.kuis3__kids--hand').fadeOut();
         }, 3000);
         setTimeout(function() {
-            $('#blockhand').fadeIn(100);
+            $('#blockhand').fadeIn();
         }, 1000);
         setTimeout(function() {
-            $('.kuis3__kids--hand').fadeOut(100);
-            $('#blockhand').fadeOut(100);
-        }, 3000);
+            $('#blockhand').fadeOut();
+        }, 3300);
+        setTimeout(function() {
+            $(".kuis3__kids--hand").removeClass("hand-move");
+        }, 4000);
         setTimeout(function() {
             $('.kuis3__kids--hand').fadeIn();
         }, 5500);
@@ -70,7 +72,7 @@ $(document).ready(function() {
         }, 3000);
         setTimeout(function() {
             $('.kuis3__kids--hand').fadeOut(100);
-        }, 3000);
+        }, 2900);
     });
 
     $('.close').click(function() {
@@ -260,6 +262,10 @@ function onClick7(element) {
 
 function onClick8(element) {
     document.getElementById("modal09").style.display = "block";
+}
+
+function onClick9(element) {
+    document.getElementById("modal010").style.display = "block";
 }
 
 // s parallax
@@ -493,4 +499,10 @@ function myFunction(imgs) {
     var expandImg = document.getElementById("expandedImg");
     expandImg.src = imgs.src;
     expandImg.parentElement.style.display = "block";
+}
+
+function myFunction2(imgs) {
+    var expandImg2 = document.getElementById("expandedImg2");
+    expandImg2.src = imgs.src;
+    expandImg2.parentElement.style.display = "block";
 }
