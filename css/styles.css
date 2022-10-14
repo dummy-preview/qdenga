@@ -3252,7 +3252,7 @@ footer {
         width: 178.08px;
     }
     .kuis2__dokter img {
-        margin-top: -80px;
+        margin-top: 25px;
         width: 217px;
     }
     .kuis2__dokter {
@@ -3260,6 +3260,9 @@ footer {
     }
     .kuis2__pertanyaan--arrow2 {
         text-align: right;
+        position: absolute;
+        bottom: 279px;
+        left: 64%;
     }
     .kuis2__pertanyaan--arrow {
         text-align: right;
@@ -3439,6 +3442,14 @@ footer {
     }
     .submit__left--line {
         width: 160px;
+    }
+    .kuis2__pertanyaan--arrow2 img {
+        width: 130px;
+        margin-left: 0px;
+    }
+    .kuis2__pertanyaan--arrow2 img {
+        width: 123px;
+        transform: rotate(-38deg);
     }
 }
 
