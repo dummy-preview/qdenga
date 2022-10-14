@@ -55,7 +55,7 @@ $(document).ready(function() {
         }, 4000);
         setTimeout(function() {
             $('.kuis3__kids--hand').fadeIn();
-        }, 5500);
+        }, 5000);
     });
     $('.kuis3__select--item2 img').click(function() {
         $('.kuis3__cta2').fadeOut(100);
@@ -73,6 +73,20 @@ $(document).ready(function() {
         setTimeout(function() {
             $('.kuis3__kids--hand').fadeOut(100);
         }, 2900);
+        setTimeout(function() {
+            $("#mosquito7").addClass("move7");
+            $("#mosquito8").addClass("move8");
+            $("#mosquito9").addClass("move9");
+            $("#mosquito10").addClass("move10");
+            $("#mosquito11").addClass("move11");
+        }, 4000);
+        setTimeout(function() {
+            $("#mosquito7").fadeOut();
+            $("#mosquito8").fadeOut();
+            $("#mosquito9").fadeOut();
+            $("#mosquito10").fadeOut();
+            $("#mosquito11").fadeOut();
+        }, 4100);
     });
 
     $('.close').click(function() {
