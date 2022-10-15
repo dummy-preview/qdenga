@@ -1,10 +1,13 @@
 $(document).ready(function() {
     // e preload
-    $(window).on('load', function() {
-        $("#preloader").delay().fadeOut("slow", function() {
-            $(this).remove()
-        })
-    });
+    // $(window).on('load', function() {
+    //     $("#preloader").delay().fadeOut("slow", function() {
+    //         $(this).remove()
+    //     })
+    // });
+    $(window).load(function() {
+        $("#preloader").delay(2000).fadeOut("slow");
+    })
     $("#menu-toggler").click(function() {
         toggleBodyClass("menu-active");
     });
@@ -520,3 +523,5 @@ function myFunction2(imgs) {
     expandImg2.src = imgs.src;
     expandImg2.parentElement.style.display = "block";
 }
+
+// lazy
