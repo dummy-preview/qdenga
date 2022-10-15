@@ -452,14 +452,14 @@ var animation = bodymovin.loadAnimation({
     path: 'images/mascot.json',
     name: 'myAnimation',
 });
-var animation = bodymovin.loadAnimation({
-    container: document.getElementById('mascot2'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'images/mascot.json',
-    name: 'myAnimation',
-});
+// var animation = bodymovin.loadAnimation({
+//     container: document.getElementById('mascot2'),
+//     renderer: 'svg',
+//     loop: true,
+//     autoplay: true,
+//     path: 'images/mascot.json',
+//     name: 'myAnimation',
+// });
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('blockhand'),
     renderer: 'svg',
