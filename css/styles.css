@@ -2878,9 +2878,6 @@ footer {
     .mySwiper {
         height: 610px;
     }
-    .submit__objtop {
-        top: -1px;
-    }
 }
 
 @media (max-width:768px) {
@@ -3374,7 +3371,6 @@ footer {
     }
     .submit__objtop {
         position: absolute;
-        top: -1px;
         left: 0;
         width: 100%;
     }
