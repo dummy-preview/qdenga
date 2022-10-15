@@ -5,9 +5,9 @@ $(document).ready(function() {
     //         $(this).remove()
     //     })
     // });
-    $(window).load(function() {
-        $("#preloader").delay(2000).fadeOut("slow");
-    })
+    // $(window).load(function() {
+    //     $("#preloader").delay(2000).fadeOut("slow");
+    // })
     $("#menu-toggler").click(function() {
         toggleBodyClass("menu-active");
     });
