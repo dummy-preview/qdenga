@@ -514,7 +514,7 @@ a.nav__link.btn-share:hover {
 .kuis2__objtop {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -11px;
     width: 100%;
 }
 
@@ -1301,7 +1301,7 @@ a.nav__link.btn-share:hover {
 
 .submit__objtop {
     position: absolute;
-    top: 0;
+    top: -12px;
     left: 0;
     width: 100%;
 }
