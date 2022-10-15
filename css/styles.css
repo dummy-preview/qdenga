@@ -730,6 +730,7 @@ a.nav__link.btn-share:hover {
     position: absolute;
     display: none;
     left: 3px;
+    top: 41px;
     transform: scale(1);
     -webkit-transform: scale(1.05);
     -webkit-filter: drop-shadow(5px 5px 5px #ff82cccc);
@@ -740,6 +741,7 @@ a.nav__link.btn-share:hover {
     position: absolute;
     display: none;
     left: 3px;
+    top: 41px;
     transform: scale(1);
     -webkit-transform: scale(1.05);
     -webkit-filter: drop-shadow(5px 5px 5px #ff82cccc);
