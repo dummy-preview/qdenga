@@ -376,6 +376,18 @@ a.nav__link.btn-share:hover {
     left: 0;
 }
 
+.banner__text {
+    position: absolute;
+    right: -119px;
+    top: 123px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #1A1A1A;
+    transform: rotate(-90deg);
+}
+
 .banner::before {
     position: absolute;
     content: '';
@@ -3340,8 +3352,8 @@ footer {
         flex-wrap: wrap;
     }
     .banner__item {
-        width: 155px;
-        margin-bottom: 10px;
+        width: 134px;
+        margin-bottom: -8px;
     }
     .home__objbottom {
         bottom: 115px;
@@ -3768,6 +3780,12 @@ footer {
     }
     .nama-form {
         width: 48%;
+    }
+    .banner__text {
+        right: -70px;
+        top: 123px;
+        font-size: 16px;
+        line-height: 29px;
     }
 }
 
