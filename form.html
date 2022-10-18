@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+    <title>CodePen - Pure CSS Select Box</title>
+
+
+
+
+    <style>
+        body {
+            padding: 30px;
+            box-sizing: border-box;
+            width: 20%;
+            margin: 3rem auto;
+        }
+        
+        .select-box {
+            position: relative;
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            color: #60666d;
+        }
+        
+        .select-box__current {
+            position: relative;
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .select-box__current:focus+.select-box__list {
+            opacity: 1;
+            -webkit-animation-name: none;
+            animation-name: none;
+        }
+        
+        .select-box__current:focus+.select-box__list .select-box__option {
+            cursor: pointer;
+        }
+        
+        .select-box__current:focus .select-box__icon {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        .select-box__icon {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            width: 20px;
+            opacity: 0.3;
+            transition: 0.2s ease;
+        }
+        
+        .select-box__value {
+            display: flex;
+        }
+        
+        .select-box__input {
+            display: none;
+        }
+        
+        .select-box__input:checked+.select-box__input-text {
+            display: block;
+        }
+        
+        .select-box__input-text {
+            display: none;
+            width: 100%;
+            margin: 0;
+            padding: 15px;
+            background-color: #fff;
+        }
+        
+        .select-box__list {
+            position: absolute;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            opacity: 0;
+            -webkit-animation-name: HideList;
+            animation-name: HideList;
+            -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .select-box__option {
+            display: block;
+            padding: 15px;
+            background-color: #fff;
+        }
+        
+        .select-box__option:hover,
+        .select-box__option:focus {
+            color: #546c84;
+            background-color: #fbfbfb;
+        }
+        
+        @-webkit-keyframes HideList {
+            from {
+                transform: scaleY(1);
+            }
+            to {
+                transform: scaleY(0);
+            }
+        }
+        
+        @keyframes HideList {
+            from {
+                transform: scaleY(1);
+            }
+            to {
+                transform: scaleY(0);
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="select-box">
+        <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                <p class="select-box__input-text">Cream</p>
+            </div>
+            <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked" />
+                <p class="select-box__input-text">Cheese</p>
+            </div>
+            <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked" />
+                <p class="select-box__input-text">Milk</p>
+            </div>
+            <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked" />
+                <p class="select-box__input-text">Honey</p>
+            </div>
+            <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked" />
+                <p class="select-box__input-text">Toast</p>
+            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" />
+        </div>
+        <ul class="select-box__list">
+            <li>
+                <label class="select-box__option" for="0" aria-hidden="aria-hidden">Cream</label>
+            </li>
+            <li>
+                <label class="select-box__option" for="1" aria-hidden="aria-hidden">Cheese</label>
+            </li>
+            <li>
+                <label class="select-box__option" for="2" aria-hidden="aria-hidden">Milk</label>
+            </li>
+            <li>
+                <label class="select-box__option" for="3" aria-hidden="aria-hidden">Honey</label>
+            </li>
+            <li>
+                <label class="select-box__option" for="4" aria-hidden="aria-hidden">Toast</label>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
