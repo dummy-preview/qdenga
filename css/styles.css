@@ -423,7 +423,8 @@ a.nav__link.btn-share:hover {
 }
 
 #expandedImg2 {
-    width: 100%
+    /* width: 100% */
+    height: 100vh;
 }
 
 .kuis1 {
@@ -2642,7 +2643,7 @@ a.nav__link.btn-share:hover {
 }
 
 .page-kuis__content2 {
-    width: 350px;
+    /* width: ; */
     height: auto;
     border-radius: 20px;
 }
@@ -3101,6 +3102,9 @@ footer {
     }
     .nama-form {
         width: 58%;
+    }
+    #expandedImg2 {
+        height: 85vh;
     }
 }
 
@@ -3786,6 +3790,10 @@ footer {
         top: 123px;
         font-size: 16px;
         line-height: 29px;
+    }
+    #expandedImg2 {
+        height: auto;
+        width: 100%;
     }
 }
 
