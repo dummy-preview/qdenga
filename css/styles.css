@@ -537,7 +537,6 @@ a.nav__link.btn-share:hover {
     transition: all .2s ease-in-out;
     cursor: pointer;
     animation: zoom-in-zoom-out 0.7s ease-out infinite;
-    display: none;
 }
 
 .kuis2__pertanyaan--info:hover {
