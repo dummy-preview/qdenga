@@ -188,14 +188,18 @@
                 <div class="jawaban">
                     <div class="radio-container">
                         <div class="radio-options">
-                            <div onclick="onClick1(this)">
-                                <input class="radio-input" id="mitos1" type="radio" name="kuis1" value="10">
-                                <label class="radio-label" for="mitos1">Mitos</label>
+                            <div class="disable-kuis disablekuis1">
+                                <div onclick="onClick1(this)">
+                                    <input class="radio-input" id="mitos1" type="radio" name="kuis1" value="10">
+                                    <label class="radio-label" for="mitos1">Mitos</label>
+                                </div>
                             </div>
                             atau
-                            <div onclick="onClick2(this)">
-                                <input class="radio-input" id="fakta1" type="radio" name="kuis1" value="25">
-                                <label class="radio-label" for="fakta1">Fakta</label>
+                            <div class="disable-kuis">
+                                <div onclick="onClick2(this)">
+                                    <input class="radio-input" id="fakta1" type="radio" name="kuis1" value="25">
+                                    <label class="radio-label" for="fakta1">Fakta</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -208,14 +212,18 @@
                 <div class="jawaban">
                     <div class="radio-container">
                         <div class="radio-options">
-                            <div onclick="onClick3(this)">
-                                <input class="radio-input" id="mitos2" type="radio" name="kuis2" value="10">
-                                <label class="radio-label" for="mitos2">Mitos</label>
+                            <div class="disable-kuis">
+                                <div onclick="onClick3(this)">
+                                    <input class="radio-input" id="mitos2" type="radio" name="kuis2" value="10">
+                                    <label class="radio-label" for="mitos2">Mitos</label>
+                                </div>
                             </div>
                             atau
-                            <div onclick="onClick4(this)">
-                                <input class="radio-input" id="fakta2" type="radio" name="kuis2" value="25">
-                                <label class="radio-label" for="fakta2">Fakta</label>
+                            <div class="disable-kuis disablekuis1">
+                                <div onclick="onClick4(this)">
+                                    <input class="radio-input" id="fakta2" type="radio" name="kuis2" value="25">
+                                    <label class="radio-label" for="fakta2">Fakta</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -228,14 +236,18 @@
                 <div class="jawaban">
                     <div class="radio-container">
                         <div class="radio-options">
-                            <div onclick="onClick6(this)">
-                                <input class="radio-input" id="mitos3" type="radio" name="kuis3" value="10">
-                                <label class="radio-label" for="mitos3">Mitos</label>
+                            <div class="disable-kuis disablekuis1">
+                                <div onclick="onClick6(this)">
+                                    <input class="radio-input" id="mitos3" type="radio" name="kuis3" value="10">
+                                    <label class="radio-label" for="mitos3">Mitos</label>
+                                </div>
                             </div>
                             atau
-                            <div onclick="onClick5(this)">
-                                <input class="radio-input" id="fakta3" type="radio" name="kuis3" value="25">
-                                <label class="radio-label" for="fakta3">Fakta</label>
+                            <div class="disable-kuis">
+                                <div onclick="onClick5(this)">
+                                    <input class="radio-input" id="fakta3" type="radio" name="kuis3" value="25">
+                                    <label class="radio-label" for="fakta3">Fakta</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -389,14 +401,18 @@
                 <div class="kuis3__select">
                     <div class="kuis3__select--wrap">
                         <div class="kuis3__select--item1">
-                            <img id="startCount" src="images/dosis1.png" alt="">
+                            <div class="botle1">
+                                <img id="startCount" src="images/dosis1.png" alt="">
+                            </div>
                             <div class="kuis3__cta">
                                 <img src="images/klik.png" alt="">
                             </div>
                             <div class="block-kuis32"></div>
                         </div>
                         <div class="kuis3__select--item2">
-                            <img id="startCount2" src="images/dosis2.png" alt="">
+                            <div class="botle2">
+                                <img id="startCount2" src="images/dosis2.png" alt="">
+                            </div>
                             <div class="kuis3__cta2">
                                 <img src="images/klik.png" alt="">
                             </div>
@@ -434,12 +450,21 @@
             <div class="photobooth__frame">
                 <div class="photobooth__frame--item">
                     <img src="images/frame1-big.png" alt="" onclick="myFunction(this);">
+                    <div class="disableframe hideframe">
+                        <img src="images/lock-frame.png" alt="">
+                    </div>
                 </div>
                 <div class="photobooth__frame--item">
                     <img src="images/frame2-big.png" alt="" onclick="myFunction(this);">
+                    <div class="disableframe hideframe">
+                        <img src="images/lock-frame.png" alt="">
+                    </div>
                 </div>
                 <div class="photobooth__frame--item">
                     <img src="images/frame3-big.png" alt="" onclick="myFunction(this);">
+                    <div class="disableframe">
+                        <img src="images/lock-frame.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="photobooth__get">

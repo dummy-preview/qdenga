@@ -32,7 +32,7 @@ $(document).ready(function() {
         document.body.classList.toggle(className);
     }
     // kuis animation
-    $('.kuis3__select--item1 img').click(function() {
+    $('.botle1 img').click(function() {
         setTimeout(function() {
             $('.kuis3__cta2').fadeIn(700);
             $('.kuis3__cta2').fadeIn(700);
@@ -60,7 +60,7 @@ $(document).ready(function() {
             $('.kuis3__kids--hand').fadeIn();
         }, 5000);
     });
-    $('.kuis3__select--item2 img').click(function() {
+    $('.botle2 img').click(function() {
         $('.kuis3__cta2').fadeOut(100);
         $('.block-kuis31').fadeIn(100);
         $('.kuis3__kids--hand').addClass('hand-move');
@@ -275,6 +275,8 @@ function onClick6(element) {
 
 function onClick7(element) {
     document.getElementById("modal08").style.display = "block";
+    $(".kuis2__pertanyaan--info").fadeOut();
+
 }
 
 function onClick8(element) {
@@ -323,16 +325,7 @@ $(window).scroll(function() {
     } else {
         $("#scrollFx").css({ "bottom": ($(window).scrollTop()) + "px" });
     }
-    // $(window).scroll(function() {
-    //     var scroll = $(window).scrollTop();
-    //     if (scroll >= 50) {
-    //         $(".header").addClass("fixshow");
-    //         $(".home").addClass("home-space");
-    //     } else {
-    //         $(".header").removeClass("fixshow");
-    //         $(".home").removeClass("home-space");
-    //     }
-    // });
+
 });
 // animation lottie
 var animation = bodymovin.loadAnimation({
@@ -455,14 +448,7 @@ var animation = bodymovin.loadAnimation({
     path: 'images/mascot.json',
     name: 'myAnimation',
 });
-// var animation = bodymovin.loadAnimation({
-//     container: document.getElementById('mascot2'),
-//     renderer: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'images/mascot.json',
-//     name: 'myAnimation',
-// });
+
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('blockhand'),
     renderer: 'svg',
