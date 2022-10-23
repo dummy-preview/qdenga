@@ -1266,19 +1266,23 @@ a.nav__link.btn-share:hover {
 
 .disableframe {
     position: absolute;
-    top: 0;
+    top: 9px;
     left: 0;
     width: 100%;
-    height: 100%;
+    border-radius: 8px;
+    height: 85%;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: grayscale(100%);
 }
 
 .disableframe img {
+    width: 50px;
     border-radius: 5px;
-    border: 5px solid #ffffff
+    border: 5px solid transparent
 }
 
 .disableframe img:hover {
