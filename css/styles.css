@@ -689,6 +689,14 @@ a.nav__link.btn-share:hover {
     height: 927px;
 }
 
+.kuis3__title2 {
+    text-align: center;
+}
+
+.kuis3__title2 img {
+    width: 250px;
+}
+
 .kuis3__content {
     position: absolute;
     width: 100%;
@@ -3849,6 +3857,9 @@ footer {
     #expandedImg2 {
         height: auto;
         width: 100%;
+    }
+    .kuis3__title2 img {
+        width: 180px;
     }
 }
 
