@@ -95,42 +95,6 @@ $(document).ready(function() {
     $('.close').click(function() {
         $('.modal').fadeOut();
     });
-    // increment
-    // $("#startCount").on("click", function(evt) {
-    //     setTimeout(function() {
-    //         var $el = $("#el"),
-    //             value = 50;
-    //         evt.preventDefault();
-    //         $({ percentage: 0 }).stop(true).animate({ percentage: value }, {
-    //             duration: 2000,
-    //             easing: "easeOutExpo",
-    //             step: function() {
-    //                 var percentageVal = Math.round(this.percentage * 10) / 10;
-    //                 $el.text(percentageVal);
-    //             }
-    //         }).promise().done(function() {
-    //             $el.text(value);
-    //         });
-    //     }, 2500);
-    // });
-    // $("#startCount2").on("click", function(evt) {
-    //     setTimeout(function() {
-    //         var $el2 = $(".presen-0"),
-    //             value = 100;
-    //         evt.preventDefault();
-    //         $({ percentage: 50 }).stop(true).animate({ percentage: value }, {
-    //             duration: 2000,
-    //             easing: "easeOutExpo",
-    //             step: function() {
-    //                 var percentageVal2 = Math.round(this.percentage * 10) / 10;
-    //                 $el2.text(percentageVal2);
-    //             }
-    //         }).promise().done(function() {
-    //             $el2.text(value);
-    //         });
-    //     }, 3000);
-    // });
-
 });
 
 const node = document.getElementById('exportable');
