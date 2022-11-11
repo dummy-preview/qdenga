@@ -13,7 +13,6 @@
             width: 550px;
             height: 550px;
             display: flex;
-            background-image: url(img/photo.jpg);
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-size: cover;
@@ -46,7 +45,8 @@
     takeSnapShot = function() {
         Webcam.snap(function(data_uri) {
             document.getElementById('snapShot').innerHTML =
-                '<img src="' + data_uri + '"/>';
+                // '<img src="' + data_uri + '"/>';
+                '<div style="' + data_uri + '">';
         });
     }
 </script>
