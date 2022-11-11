@@ -1306,6 +1306,32 @@ a.nav__link.btn-share:hover {
 .photobooth__get {
     text-align: center;
     margin-top: 28px;
+    position: relative;
+}
+
+.photobooth__block {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    display: none;
+    visibility: visible;
+}
+
+.photobooth__block--content {
+    width: 90%;
+    height: 155px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4.8px;
+    background: #ffffff;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .photobooth__get img {

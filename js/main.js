@@ -8,6 +8,17 @@ $(document).ready(function() {
     // $(window).load(function() {
     //     $("#preloader").delay(2000).fadeOut("slow");
     // })
+    $('a[href^="#"]').bind('click.smoothscroll', function(e) {
+        e.preventDefault();
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 500, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
     $("#menu-toggler").click(function() {
         toggleBodyClass("menu-active");
     });
