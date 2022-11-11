@@ -4,6 +4,21 @@
 <head>
     <title>Capture picture from your webcam</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>
+    <style>
+        .photobooth__get {
+            text-align: center;
+            margin-top: 28px;
+            position: relative;
+            /* background: #000; */
+            width: 550px;
+            height: 550px;
+            display: flex;
+            background-image: url(img/photo.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,7 +28,7 @@
     <!--FOR THE SNAPSHOT-->
     <input type="button" value="Take a Snap" id="btPic" onclick="takeSnapShot()" />
     <div id="snapShot">
-        <img src="" alt="">
+        <img id="expandedImg" src="../images/frame1-big.png" alt="">
     </div>
 </body>
 
@@ -30,8 +45,8 @@
     // SHOW THE SNAPSHOT.
     takeSnapShot = function() {
         Webcam.snap(function(data_uri) {
-            document.getElementById('snapShot').innerHTML =
-                '<img src="' + data_uri + '" width="320px" height="569px" />';
+            document.getElementById('snapShot').style.backgroundImage =
+                'url(' + data_uri + ')"/>';
         });
     }
 </script>
