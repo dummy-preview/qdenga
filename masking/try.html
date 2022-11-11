@@ -9,7 +9,7 @@
             text-align: center;
             margin-top: 28px;
             position: relative;
-            /* background: #000; */
+            background: #000;
             width: 550px;
             height: 550px;
             display: flex;
@@ -27,7 +27,7 @@
     <!--FOR THE SNAPSHOT-->
     <input type="button" value="Take a Snap" id="btPic" onclick="takeSnapShot()" />
     <div id="snapShot">
-        <img id="expandedImg" src="../images/frame1-big.png" alt="">
+        <!-- <img id="expandedImg" src="../images/frame1-big.png" alt=""> -->
     </div>
 </body>
 
@@ -46,7 +46,7 @@
         Webcam.snap(function(data_uri) {
             document.getElementById('snapShot').innerHTML =
                 // '<img src="' + data_uri + '"/>';
-                '<div style="' + data_uri + '">';
+                '<div id="photobooth__get" style="' + data_uri + '">';
         });
     }
 </script>
