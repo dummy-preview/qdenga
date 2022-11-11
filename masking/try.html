@@ -45,8 +45,8 @@
     takeSnapShot = function() {
         Webcam.snap(function(data_uri) {
             document.getElementById('snapShot').innerHTML =
-                // '<img src="' + data_uri + '"/>';
-                '<div id="photobooth__get" style="' + data_uri + '"></div>';
+                '<img src="' + data_uri + '"/>';
+            // '<div id="photobooth__get" style="' + data_uri + '"></div>';
         });
     }
 </script>
