@@ -28,7 +28,7 @@
     <!--FOR THE SNAPSHOT-->
     <input type="button" value="Take a Snap" id="btPic" onclick="takeSnapShot()" />
     <div id="snapShot">
-        <img src="../images/frame1-big.png" alt="">
+        <img id="expandedImg" src="../images/frame1-big.png" alt="">
     </div>
 </body>
 
@@ -45,8 +45,8 @@
     // SHOW THE SNAPSHOT.
     takeSnapShot = function() {
         Webcam.snap(function(data_uri) {
-            document.getElementById('snapShot').style.backgroundImage =
-                'url(' + data_uri + ')"/>';
+            document.getElementById('snapShot').innerHTML =
+                '<img src="' + data_uri + '"/>';
         });
     }
 </script>
