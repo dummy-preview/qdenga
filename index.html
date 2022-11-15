@@ -11,6 +11,8 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="QDenga x Takeda" />
     <meta property="og:image" content="images/thumbnail.jpg" />
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="600">
     <meta property="og:description" content="Selamat datang, mari uji pengetahuan Dokter seputar beban penyakit dan pencegahan dengue" />
     <meta property="og:url" content="https://dummy-preview.github.io/qdenga/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -88,6 +90,15 @@
             <img src="images/familly.png" alt="">
         </div>
         <div class="home__objeclips"></div>
+        <div class="home__running">
+            <section>
+                <div>
+                    <section class="news-message">
+                        <p>Save the Date for Qdenga Launch in Indonesia on 5th of February 2023</p>
+                    </section>
+                </div>
+            </section>
+        </div>
         <div class="container">
             <div class="home__mosquito1" id="mosquito1"></div>
             <div class="home__mosquito2" id="mosquito2"></div>
@@ -95,6 +106,7 @@
             <div class="home__mosquito4" id="mosquito4"></div>
             <div class="home__mosquito5" id="mosquito5"></div>
             <div class="home__mosquito6" id="mosquito6"></div>
+
             <div class="home__textleft">
                 <h1>Hallo!</h1>
                 <p>
@@ -463,6 +475,12 @@
                 </div>
                 <div class="photobooth__frame--item">
                     <img src="images/frame3-big.png" alt="" onclick="myFunction(this);">
+                    <div class="disableframe hideframe">
+                        <img src="images/lock.png" alt="">
+                    </div>
+                </div>
+                <div class="photobooth__frame--item">
+                    <img src="images/frame4-big.png" alt="" onclick="myFunction(this);">
                     <div class="disableframe">
                         <img src="images/lock.png" alt="">
                     </div>
@@ -477,99 +495,97 @@
                 </div>
             </div>
             <div class="photobooth__wrap">
+                <!-- <div class="photobooth__snap">
+                    <img src="images/btn-snap.png" alt="">
+                </div> -->
+                <!-- after snap -->
                 <div class="photobooth__snap">
-                    <img src="images/btn-download.png" alt="">
+                    <img src="images/btn-save.png" alt="">
                 </div>
                 <div class="photobooth__snap">
-                    <img src="images/btn-snap.png" alt="">
+                    <img src="images/btn-download.png" alt="">
                 </div>
                 <div class="photobooth__snap">
                     <img src="images/btn-retake.png" alt="">
                 </div>
             </div>
-            <div class="photobooth__upload">
-                or <span onclick="onClick(this)" class="color1">upload an image</span>
+            <!-- after snap -->
+            <div class="photobooth__share">
+                <p>or share</p>
+                <div class="photobooth__wrap">
+                    <div class="photobooth__share--icon">
+                        <a href="#" target="_blank">
+                            <img src="images/tw.png" alt="">
+                        </a>
+                    </div>
+                    <div class="photobooth__share--icon">
+                        <a href="#" target="_blank">
+                            <img src="images/ig.png" alt="">
+                        </a>
+                    </div>
+                    <div class="photobooth__share--icon">
+                        <a href="#" target="_blank">
+                            <img src="images/fb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="photobooth__share--icon">
+                        <a href="#" target="_blank">
+                            <img src="images/wa.png" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
+
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper grid-container">
                     <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri1.png" alt="">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="galeri__item" onclick="onClick10(this)">
+                            <img onclick="myFunction3(this);" src="images/galeri3.png" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="galeri__item">
-                            <img src="images/galeri2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="galeri__item">
-                            <img src="images/galeri4.png" alt="">
+                            <img onclick="myFunction3(this);" src="images/galeri4.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -703,7 +719,9 @@
     </footer>
     <!-- pop up -->
     <div id="modal01" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close">
+            <img src="images/close.png" alt="">
+        </span>
         <div class="modal-content">
             <div id="img01" class="photobooth__content">
                 <div class="page">
@@ -732,7 +750,7 @@
     </div>
     <!-- kuis1 -->
     <div id="modal02" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"> <img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -742,7 +760,7 @@
         </div>
     </div>
     <div id="modal03" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -752,7 +770,7 @@
         </div>
     </div>
     <div id="modal04" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -762,7 +780,7 @@
         </div>
     </div>
     <div id="modal05" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -773,7 +791,7 @@
         </div>
     </div>
     <div id="modal06" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -784,7 +802,7 @@
         </div>
     </div>
     <div id="modal07" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -796,7 +814,7 @@
     </div>
     <!-- kuis2 -->
     <div id="modal08" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -806,7 +824,7 @@
         </div>
     </div>
     <div id="modal09" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -816,7 +834,7 @@
         </div>
     </div>
     <div id="modal011" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="close"><img src="images/close.png" alt=""></span>
         <div class="modal-content">
             <div class="page-kuis__content">
                 <div class="page-kuis">
@@ -826,10 +844,19 @@
         </div>
     </div>
     <div id="modal010" class="modal">
-        <span class="close">×&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
         <div class="modal-content">
             <div class="page-kuis__content2">
+                <span class="close"><img src="images/close.png" alt=""></span>
                 <img id="expandedImg2" src="images/frame1-big.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="modal012" class="modal">
+        <span class="close"><img src="images/close.png" alt=""></span>
+        <div class="modal-content">
+            <div class="page-kuis__content">
+                <img id="expandedImg3" src="images/frame1-big.png" alt="">
             </div>
         </div>
     </div>

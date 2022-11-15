@@ -262,6 +262,10 @@ function onClick9(element) {
     document.getElementById("modal010").style.display = "block";
 }
 
+function onClick10(element) {
+    document.getElementById("modal012").style.display = "block";
+}
+
 // s parallax
 $.fn.moveIt = function() {
     var $window = $(window);
@@ -483,6 +487,12 @@ function myFunction2(imgs) {
     var expandImg2 = document.getElementById("expandedImg2");
     expandImg2.src = imgs.src;
     expandImg2.parentElement.style.display = "block";
+}
+
+function myFunction3(imgs) {
+    var expandImg3 = document.getElementById("expandedImg3");
+    expandImg3.src = imgs.src;
+    expandImg3.parentElement.style.display = "block";
 }
 
 // lazy
